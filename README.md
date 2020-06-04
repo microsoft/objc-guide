@@ -1,17 +1,44 @@
+# Introduction
 
-# Contributing
+The Objective-C coding conventions guide documents many best practices learned from over a decade of experience developing software on Apple platforms at Microsoft, such as [Office for Mac and iOS](https://products.office.com/mac). This is not a style guide (use [clang-format](https://clang.llvm.org/docs/ClangFormat.html) for that), but guidelines that affect implementation.
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+This document is organized by language area. We have documented many conventions we regularly use by language area, which are accompanied with rationale, examples, and a history if applicable.
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+Not all teams use every convention documented here and others may be tweaked to be more amendable to team preferences. The intent is to facilitate developing maintainable and robust code. The conventions evolve with the Objective-C language, frameworks, and experience. Feedback and discussion is welcome and encouraged. For details on how to contribute, see the [contribution guidelines](CONTRIBUTING.md).
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+# Table of Contents
+
+* [Categories](Categories.md)
+  * [Alternative Designs](Categories/AlternativeDesigns.md)
+  * [Naming](Categories/Naming.md)
+* [Classes](Classes.md)
+  * [Naming](Classes/Naming.md)
+* [Documentation](Documentation.md)
+  * [Patterns](Documentation/Patterns.md)
+* [Exceptions](Exceptions.md)
+* [Headers](Headers.md)
+  * [Factoring](Headers/Factoring.md)
+  * [Import and Include](Headers/ImportAndInclude.md)
+  * [Naming](Headers/Naming.md)
+* [Instance Variables](InstanceVariables.md)
+  * [Naming](InstanceVariables/Naming.md)
+  * [Patterns](InstanceVariables/Patterns.md)
+* [Methods and Implementations](MethodsAndImplementations.md)
+  * [Automatic Reference Counting](MethodsAndImplementations/AutomaticReferenceCounting.md)
+  * [Early Returns](MethodsAndImplementations/EarlyReturns.md)
+  * [Implicit Boolean Conversion](MethodsAndImplementations/ImplicitBooleanConversion.md)
+  * [Redundant Method Invocations](MethodsAndImplementations/RedundantMethodInvocations.md)
+* [Object Creation](ObjectCreation.md)
+* [Objective-C++](ObjectiveCpp.md)
+* [PreprocessorDirectives.md](PreprocessorDirectives.md)
+* [Properties](Properties.md)
+* [Protocols](Protocols.md)
+  * [Delegates and Data Sources](Protocols/DelegatesAndDataSources.md)
+  * [Naming](Protocols/Naming.md)
+  * [Patterns](Protocols/Patterns.md)
+* [Syntax](Syntax.md)
+  * [Dot Notation](Syntax/DotNotation.md)
+  * [Generics](Syntax/Generics.md)
 
 # Legal Notices
 
