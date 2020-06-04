@@ -1,6 +1,6 @@
 ---
 name: Issue in an existing convention
-about: 'Is there a guideline that is incorrect, unclear, or '
+about: 'Is there a guideline that is incorrect, unclear, or could be improved?'
 title: ''
 labels: ''
 assignees: ''
