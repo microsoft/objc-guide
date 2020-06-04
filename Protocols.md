@@ -6,3 +6,4 @@ Protocols declare an interface (methods and properties) that is expected to be u
 
  * [Delegates and Data Sources](Protocols/DelegatesAndDataSources.md)
  * [Naming](Protocols/Naming.md)
+ * [Patterns](Protocols/Patterns.md)
