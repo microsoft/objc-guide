@@ -16,7 +16,7 @@ To unit test code that relies on system APIs (e.g. `NSFileManager`), copy the po
 
 ## Rationale
 
-Unit test code can result in better design and more maintainable code. Using protocols to mock system APIs allows more code to be unit testable. See Apple's [Testing Tips and Tricks WWDC Presentation](https://developer.apple.com/videos/play/wwdc2018/417/) for more detail.
+Unit test code can result in better design and more maintainable code. Using protocols to mock system APIs allows more code to be unit testable. See Apple's [Testing Tips and Tricks WWDC Presentation](https://developer.apple.com/videos/play/wwdc2018/417/) for more details.
 
 ## Examples
 
