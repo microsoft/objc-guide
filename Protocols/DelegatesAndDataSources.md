@@ -22,7 +22,7 @@ Apple's delegate and data source protocols as a rule include the word `Delegate`
 
 ### Bad
 
-```Objective-C
+```obj-c
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol XYZCustomViewTapping; // bad: this protocol follows the delegate pattern and should end with Delegate
@@ -76,7 +76,7 @@ NS_ASSUME_NONNULL_END
 
 ### Good
 
-```Objective-C
+```obj-c
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol XYZCustomViewDelegate;

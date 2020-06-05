@@ -14,7 +14,7 @@ A lowercase letter after the underscore followed by additional alphanumeric char
 
 ## Examples
 
-```Objective-C
+```obj-c
 @implementation MyObject {
 @private
 	NSString *_name; // good

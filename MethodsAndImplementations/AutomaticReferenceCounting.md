@@ -15,7 +15,7 @@ Analyzing object lifetime can be complex. With ARC, the compiler ensures correct
 
 ### Code compiled without ARC (`-fno-objc-arc`)
 
-```Objective-C
+```obj-c
 NSScanner *scanner = [[NSScanner alloc] initWithString:string];
 [scanner scanInt:&value1];
 [scanner release]; // bad: premature release of object
@@ -25,7 +25,7 @@ NSScanner *scanner = [[NSScanner alloc] initWithString:string];
 
 ### Code compiled with ARC (`-f-objc-arc`)
 
-```Objective-C
+```obj-c
 NSScanner *scanner = [[NSScanner alloc] initWithString:string];
 [scanner scanInt:&value1];
 ...

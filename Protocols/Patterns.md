@@ -22,7 +22,7 @@ Unit test code can result in better design and more maintainable code. Using pro
 
 ### Separation of concerns within protocols
 #### Bad
-```Objective-C
+```obj-c
 // NSAppearanceCustomizationAndMouseHandling.h
 @protocol NSAppearanceCustomizationAndMouseHandling <NSObject> // bad: protocol conflates multiple concepts
 @required
@@ -59,7 +59,7 @@ Unit test code can result in better design and more maintainable code. Using pro
 ```
 
 #### Good
-```Objective-C
+```obj-c
 // NSAppearanceCustomization.h
 @protocol NSAppearanceCustomization <NSObject> // good: protocol behaviors are related
 @required
@@ -89,7 +89,7 @@ Unit test code can result in better design and more maintainable code. Using pro
 
 ### Using protocols reduces code duplication 
 #### Bad
-```Objective-C
+```obj-c
 // NSWindow.h
 @interface NSWindow : NSResponder
 
@@ -124,7 +124,7 @@ if ([someObject isKindOfClass:[NSWindow class]]) { // bad: duplication of code s
 ```
 
 #### Good
-```Objective-C
+```obj-c
 // NSAppearanceCustomization.h
 @protocol NSAppearanceCustomization <NSObject>
 @required
@@ -156,7 +156,7 @@ if ([someObject conformsToProtocol:@protocol(NSAppearanceCustomization)]) { // g
 
 ### Unit Testing
 #### Bad
-```Objective-C
+```obj-c
 // bad: this method directly modifies the file system making it hard to unit test
 - (void)deleteItemFromFileSystemWithPath:(NSString *)path { 
     NSFileManager *defaultManager = [NSFileManager defaultManager];
@@ -168,7 +168,7 @@ if ([someObject conformsToProtocol:@protocol(NSAppearanceCustomization)]) { // g
 }
 ```
 #### Good
-```Objective-C
+```obj-c
 @protocol XYZItemRemoving <NSObject> // good: the relevant file manager API has been extracted
 - (BOOL)removeItemAtPath:(NSString *)path error:(NSError *_Nullable *)error;
 @end

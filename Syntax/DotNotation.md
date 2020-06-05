@@ -16,7 +16,7 @@ For further reading, others such as [Big Nerd Ranch](https://www.bignerdranch.co
 
 ## Examples
 
-```Objective-C
+```obj-c
 @implementation MyView
 
 - (void)updateFrame {

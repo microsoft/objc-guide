@@ -16,7 +16,7 @@ When instance variables back properties, the implementation of the accessor meth
 
 ### Bad
 
-```Objective-C
+```obj-c
 // XYZObject.h
 @interface XYZObject : NSObject { // bad: instance variables should be declared from the `@implementation`
 @public // bad: instance variables should be private
@@ -52,7 +52,7 @@ When instance variables back properties, the implementation of the accessor meth
 
 ### Good
 
-```Objective-C
+```obj-c
 // XYZObject.h
 @interface XYZObject : NSObject
 @property (nonatomic) NSUInteger age;

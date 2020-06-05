@@ -51,7 +51,7 @@ Private headers allow unit testing of internal methods while establishing the co
 
 ## Examples
 
-```Objective-C
+```obj-c
 // XYZObject.h
 @interface XYZObject : NSObject
 // ...

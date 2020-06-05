@@ -12,7 +12,7 @@ Using `#import` eliminates the need for `#include` guards, which are not used by
 
 ## Examples
 
-```Objective-C
+```obj-c
 #include "XYZObjcClass.h" // bad: possible duplicate inclusion of this header
 #import "XYZObjcClass.h" // good: clang determines if this header has been included already and avoids duplicate inclusion
 #import "XYZPreprocessorModifier.h" // bad: may not be inlined here to affect the preprocessor state
