@@ -12,7 +12,7 @@ Header file names should describe their contents. By using the same name, the he
 
 ### Single Class
 
-```Objective-C
+```obj-c
 // Object.h 
 // bad: header name doesn't match class name
 
@@ -24,7 +24,7 @@ Header file names should describe their contents. By using the same name, the he
 
 ### Multiple Classes
 
-```Objective-C
+```obj-c
 // bad: multiple classes defined in the same file
 @interface XYZObject : NSObject
 @end
@@ -35,7 +35,7 @@ Header file names should describe their contents. By using the same name, the he
 
 ### Protocol
 
-```Objective-C
+```obj-c
 // XYZViewProtocols.h
 // bad: doesn't match the protocol name
 
@@ -50,7 +50,7 @@ Header file names should describe their contents. By using the same name, the he
 
 ### Class and Related Protocol
 
-```Objective-C
+```obj-c
 // XYZObjectAndProtocols.h
 // bad: name doesn't match the class name
 

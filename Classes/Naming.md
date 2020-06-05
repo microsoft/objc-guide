@@ -12,7 +12,7 @@ Class names in Objective-C share a process global namepsace. Three letter prefix
 
 ## Examples
 
-```Objective-C
+```obj-c
 @interface Object : NSObject // bad: no three letter prefix
 @end
 

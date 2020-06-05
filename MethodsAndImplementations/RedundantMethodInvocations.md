@@ -14,7 +14,7 @@ We experienced a real world performance regression where a property was repeated
 
 ## Examples
 
-```Objective-C
+```obj-c
 
 @implementation MyView
 

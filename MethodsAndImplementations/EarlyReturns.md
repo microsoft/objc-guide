@@ -14,7 +14,7 @@ Methods with multiple return statements may become hard to maintain over time. W
 
 ### Early Returns
 
-```Objective-C
+```obj-c
 - (CFIndex)indexOfFirstTokenFromString:(CFStringRef)string withLength:(NSInteger)length {
     CFLocaleRef locale = CFLocaleCopyCurrent();
 	CFStringTokenizerRef tokenizer = CFStringTokenizerCreate(kCFAllocatorDefault,
@@ -42,7 +42,7 @@ Methods with multiple return statements may become hard to maintain over time. W
 
 ### No Early Returns
 
-```Objective-C
+```obj-c
 - (CFIndex)indexOfFirstTokenFromString:(CFStringRef)string withLength:(NSInteger)length {
     CFIndex index = NSNotFound;
     CFLocaleRef locale = CFLocaleCopyCurrent();

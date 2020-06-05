@@ -20,7 +20,7 @@ See [Apple's guidelines](https://developer.apple.com/library/archive/documentati
 
 ## Examples
 
-```Objective-C
+```obj-c
 // StringUtilities.h 
 // bad: doesn't use the full name of the original class, doesn't have a "+", no three letter prefix, and an overly-generic category name.
 

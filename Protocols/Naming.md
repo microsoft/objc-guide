@@ -12,7 +12,7 @@ The [Code Naming Basics](https://developer.apple.com/library/archive/documentati
 
 ## Examples
 
-```Objective-C
+```obj-c
 // Group of behaviors unrelated to a class
 @protocol NSLock; // bad: sounds like a class name
 @protocol NSLocking; // good

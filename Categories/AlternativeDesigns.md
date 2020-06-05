@@ -12,7 +12,7 @@ Separately, C-style functions avoid adding to the Objective-C [binding time](htt
 
 ## Examples
 NSString+XYZExcitementAdditions.h
-```Objective-C
+```obj-c
 @interface NSString (XYZExcitementAdditions)
 - (NSString *)xyz_stringWithExcitement; // bad: potential name collisions
 @end
@@ -20,7 +20,7 @@ NSString+XYZExcitementAdditions.h
 NSString *XYZStringWithExcitement(NSString *string); // good: symbol safety
 ```
 NSString+XYZExcitementAdditions.m
-```Objective-C
+```obj-c
 #import "NSString+XYZExcitementAdditions.h"
 
 @implementation NSString (XYZExcitementAdditions)

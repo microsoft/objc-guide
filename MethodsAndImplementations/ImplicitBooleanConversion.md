@@ -10,7 +10,7 @@ Avoid implicit conversions to boolean.
 
 ## Examples
 
-```Objective-C
+```obj-c
 NSObject *object = [[NSObject alloc] init];
 CGFloat floatValue = 9.0;
 BOOL booleanFlag = YES;

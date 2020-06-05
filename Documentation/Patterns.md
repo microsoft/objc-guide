@@ -18,7 +18,7 @@ Using the three forward slash style of documentation distinguishes documentation
 
 ### Bad
 
-```Objective-C
+```obj-c
 @class XYZPerson;
 
 NSString *XYZPersonGetInitials(XYZPerson *person); // bad: return value ambiguous regarding locale awareness
@@ -35,7 +35,7 @@ NSString *XYZPersonGetInitials(XYZPerson *person); // bad: return value ambiguou
 
 ### Good
 
-```Objective-C
+```obj-c
 @class XYZPerson;
 
 /// Gets the initials of a person for an abbreviated representation in the UI.

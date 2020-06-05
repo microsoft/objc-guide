@@ -16,7 +16,7 @@ Generics provide compile-time type checking to verify that collections, such as 
 
 Maintaining type consistency is more difficult without generics. Here is a for-each loop, which mistakenly declares the type of each item in the array as `NSString *`. `NSString` also provides an implementation of `doubleValue`, so the compiler does not emit any errors because there are no type checking errors after the implicit `id` to `NSString *` conversion.
 
-```Objective-C
+```obj-c
 - (NSNumber *)average:(NSArray *)ages {
     double average = 0; 
     NSUInteger count = [ages count];
@@ -38,7 +38,7 @@ Maintaining type consistency is more difficult without generics. Here is a for-e
 
 However, with generics, this code will fail to compile due to the type mismatch between generic type provided for the array (`NSNumber *`) and `NSString *` type used in the for-each loop.
 
-```Objective-C
+```obj-c
 - (NSNumber *)average:(NSArray<NSNumber *> *)ages {
     double average = 0; 
     NSUInteger count = [ages count];
