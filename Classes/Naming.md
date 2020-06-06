@@ -17,7 +17,7 @@ Class names in Objective-C share a process global namepsace. Three letter prefix
 @end
 
 @interface XYZObject : NSObject // good: XYZ three letter prefix
-@nd
+@end
 
 @interface XYZColorful : NSObject // bad: colorful is not a noun
 @end
