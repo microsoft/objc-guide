@@ -39,6 +39,7 @@ Not all teams use every convention documented here and others may be tweaked to 
 * [Syntax](Syntax.md)
   * [Dot Notation](Syntax/DotNotation.md)
   * [Generics](Syntax/Generics.md)
+  * [Scope](Syntax/Scope.md)
 
 # Legal Notices
 
