@@ -28,14 +28,14 @@ if (booleanStatement) {
 [self executeUnconditionalLogic]
 
 // bad: this single line statement relies on implicit scope and whether the nonLoopLogic executes as part of the loop could be clearer
-while ([self shouldLoop]) [self executeLoop]
+while ([self shouldLoop]) [self executeLoopLogic]
 [self executeNonLoopLogic]
 
 // bad: whitespace can exacerbate this issue
-while ([self shouldLoop]) [self executeLoop]
+while ([self shouldLoop]) [self executeLoopLogic]
     [self executeNonLoopLogic]
 
 // good: the explicit curly braces makes it obvious that the non-loop logic executes outside of the while loop
-while ([self shouldLoop]) { [self executeLoop]; }
+while ([self shouldLoop]) { [self executeLoopLogic]; }
 [self executeNonLoopLogic]
 ```
