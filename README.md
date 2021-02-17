@@ -6,8 +6,6 @@ This document is organized by language area. We have documented many conventions
 
 Not all teams use every convention documented here and others may be tweaked to be more amendable to team preferences. The intent is to facilitate developing maintainable and robust code. The conventions evolve with the Objective-C language, frameworks, and experience. Feedback and discussion is welcome and encouraged. For details on how to contribute, see the [contribution guidelines](CONTRIBUTING.md).
 
-{% include search-lunr.html %}
-
 # Table of Contents
 
 * [Categories](Categories.md)
