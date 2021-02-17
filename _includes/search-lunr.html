@@ -47,6 +47,8 @@ function lunr_search(term) {
         } else {
             document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>No results found...</li>";
         }
+        // Resign focus when the user presses enter
+        document.activeElement.blur();
     }
     return false;
 }
@@ -60,11 +62,3 @@ function lunr_search(term) {
     .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
     .lunrsearchresult a:hover .title {text-decoration: underline;}
 </style>
-
-
-<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search guidelines..." /></p>
-</form>
-<div id="lunrsearchresults">
-    <ul></ul>
-</div>
