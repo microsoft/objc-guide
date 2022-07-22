@@ -14,6 +14,8 @@ Place documentation only on an entity's declaration. If it has no declaration (e
 
 Using the three forward slash style of documentation distinguishes documentation comments from other non-documentation comments. This matches the [Swift recommended documentation style](https://swift.org/documentation/api-design-guidelines/), enabling better documentation block consistency across languages.
 
+Xcode can automatically add these for you. Put your cursor in the method/enum/etc. and then Editor menu -> Structure submenu -> add documentation or "Option + command + forward slash (“/“)"
+
 ## Examples
 
 ### Bad
