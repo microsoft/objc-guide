@@ -9,10 +9,15 @@ For Apple guidelines, please refer [Object Initialization](https://developer.app
 ## Examples
 
 ```obj-c
-/// in header file
+/// bad : in header file
 @interface Object : NSObject
-- (instancetype)initWithObject:(Foo *)foo NS_DESIGNATED_INITIALIZER;
-- (instancetype)init NS_UNAVAILABLE;
+- (id)initWithObject:(Foo *)foo; // bad : use of id and not declaring designated initializer if object foo is critical
+@end
+
+/// good : in header file
+@interface Object : NSObject
+- (instancetype)initWithObject:(Foo *)foo NS_DESIGNATED_INITIALIZER; // good: explicit designated initializer
+- (instancetype)init NS_UNAVAILABLE; // good make default NSObject init unavailable
 @end
 
 /// in .m or .mm file

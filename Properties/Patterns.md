@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSInteger)indexOfItem:(AAPLListItem *)item;
 
 @property (copy, nullable) NSString *name;
-@property (copy, readonly) NSArray *allItems;
+@property (copy, readonly) NSArray<AAPLListItem *> *allItems;
 // ...
 @end
 NS_ASSUME_NONNULL_END
