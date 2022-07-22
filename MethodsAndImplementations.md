@@ -7,4 +7,5 @@ Methods are the primary way an object manipulates and provides access to its sta
  * [Automatic Reference Counting](MethodsAndImplementations/AutomaticReferenceCounting.md)
  * [Early Returns](MethodsAndImplementations/EarlyReturns.md)
  * [Implicit Boolean Conversion](MethodsAndImplementations/ImplicitBooleanConversion.md)
+ * [Naming](MethodsAndImplementations/Naming.md)
  * [Redundant Method Invocations](MethodsAndImplementations/RedundantMethodInvocations.md)
